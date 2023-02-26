@@ -1,0 +1,135 @@
+#collection {
+    padding: 100px 0 30px 0;
+    padding-top: 0px;
+}
+
+#collection .items-title {
+    padding: 100px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    color: #fff;
+}
+
+#collection .view-all {
+    color: var(--color-body);
+    font-size: 18px;
+    float: right;
+    margin-top: 10px;
+}
+
+#collection .view-all:hover {
+    color: var(--color-primary);
+}
+
+#collection .collection-cards {
+    padding: 100px;
+    padding-top: 0px;
+}
+
+#collection .card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: var(--background-color-1);
+    padding: 15px;
+    box-shadow: none;
+    transition: 0.4s;
+
+}
+
+#collection .main-img {
+    width: 100%;
+    height: auto;
+    display: table;
+    margin: auto;
+    position: relative;
+}
+
+#collection .main-img-creater {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 5px solid var(--color-primary-alta);
+    border-radius: 50%;
+}
+
+#collection .creater {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+#collection .others-img ul {
+    display: flex;
+}
+
+#collection .others-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#collection .collection-content {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#collection .collection-name {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#collection .collection-items {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--color-primary-alta);
+    color: #fff;
+    transition: 0.4s;
+}
+
+#collection .collection-items:hover {
+    background-color: var(--color-primary);
+}
+
+@media screen and (max-width:992px) {
+    #collection {
+        padding-top: 15px;
+    }
+    #collection .card {
+        margin-top: 10px;
+    }
+
+    #collection .items-title {
+        padding: 10px;
+    }
+
+    #collection .main-img-creater {
+        top: 48%;
+    }
+
+    #collection .creater {
+        width: 30px;
+        height: 30px;
+    }
+    #collection .collection-name  {
+        font-size: 14px;
+    }
+
+    #collection .collection-items {
+        font-size: 12px;
+    }
+    #collection .collection-cards {
+        padding: 10px;
+    }
+}

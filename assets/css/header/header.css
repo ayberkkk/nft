@@ -1,0 +1,408 @@
+header {
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    background-color: var(--background-color-2);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .078);
+}
+
+header.sticky {
+    background: rgba(0, 0, 0, .439);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+header .top {
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    text-align: center;
+}
+
+header .top p {
+    margin-bottom: 0px !important;
+}
+
+
+header .company-logo {
+    width: 40%;
+    height: auto;
+    margin-top: 8px;
+}
+
+header .menu {
+    display: table;
+    width: initial;
+    margin: auto;
+}
+
+
+header .menu-item {
+    padding-right: 25px;
+}
+
+header .menu-item a {
+    position: relative;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 17px;
+}
+
+header .dropMenu {
+    position: relative;
+}
+
+header .menu-item:hover a:after {
+    width: 100%;
+}
+
+header .menu-item a.toggle:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out
+}
+
+header .menu-left {
+    width: 100%;
+}
+
+header .menu-left ul {
+    display: flex;
+    float: right;
+    margin-left: auto;
+}
+
+header .menu-left ul .search-li {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-left ul .search-li .searchbox {
+    position: relative;
+    width: 100% !important;
+    max-width: 100%;
+}
+
+header .searchbox input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 15px;
+    line-height: 36px;
+    font-size: 14px;
+    background: transparent;
+    border-color: var(--color-border);
+    color: #fff;
+}
+
+header #arama button {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 4px;
+}
+
+header #arama button .icon-search {
+    color: var(--color-border);
+    ;
+}
+
+header .menu-left li {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+header .wallet {
+    background-color: #212e48;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+header .wallet:hover {
+    background-color: #00a3ff;
+}
+
+header .bill {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-body);
+    position: relative;
+    z-index: 2;
+}
+
+header .bill:hover {
+    background-color: #00a3ff;
+    color: #fff;
+}
+
+header .bill .icon-cloud {
+    display: table;
+    width: initial;
+    margin: auto;
+}
+
+header .bill .badge {
+    position: absolute;
+    top: -6px;
+    right: -2px;
+    padding: 0 5px;
+    background: var(--color-primary);
+    display: inline-block;
+    border-radius: 500px;
+    line-height: 20px;
+    min-width: 20px;
+    height: 20px;
+}
+
+/* .content is default style of div.content */
+
+header .icon-right2 {
+    display: none;
+}
+
+header .menu .menu-content .menu-ul .company-mobil {
+    display: none;
+}
+
+header .menuToggle {
+    display: none;
+}
+
+header .menu-ul .mobile-contact-li {
+    display: none;
+}
+
+header .search-li-mobile {
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    header {
+        -webkit-box-shadow: 0 0 15px 5px rgb(0 0 0 / 8%);
+        -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, .08);
+        box-shadow: 0 0 15px 5px rgb(0 0 0 / 8%);
+        background-color: var(--background-color-2)
+    }
+
+    header .mobile-logo-content {
+        display: flex;
+    }
+
+    header .mobile-logo-content ul {
+        display: flex;
+        margin-left: 50px;
+    }
+
+    header .mobile-logo-content ul li {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    header .menu-left {
+        display: none;
+    }
+
+    header .company {
+        display: flex;
+        align-items: center;
+    }
+
+    header .company-logo {
+        display: flex;
+        width: 20%;
+        height: auto;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
+    header .menuToggle {
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        position: relative;
+        z-index: 15;
+        display: block;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    header .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background-color: var(--background-color-2);
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        -webkit-box-shadow: 0 0 15px 5px rgb(0 0 0 / 5%);
+        -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, .05);
+        box-shadow: 0 0 15px 5px rgb(0 0 0 / 5%);
+        display: block;
+        z-index: 15;
+        margin-left: -100%;
+    }
+
+    header .menu .menu-content {
+        width: 100%;
+    }
+
+    header .search-li-mobile {
+        display: block;
+        padding: 10px;
+    }
+
+    header #arama button {
+        top: 65px !important;
+        right: 21px !important;
+    }
+
+    header .menu .menu-content .row .menu-ul {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        line-height: 50px;
+    }
+
+    header .menu-ul .mobile-contact-li {
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    header .menu-ul .mobile-contact-li ul {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #fff !important;
+    }
+
+    header .menu-ul .mobile-contact-li ul li {
+        margin-bottom: 5px;
+    }
+
+    header .menu-ul .mobile-contact-li ul a {
+        color: #fff !important;
+    }
+
+    header .menu-ul .mobile-contact-li ul li .icon-phone,
+    .icon-mail1,
+    .icon-marker {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    header .menu-ul .mobile-contact-li .contact {
+        padding-right: 5px;
+    }
+
+    header .menu-ul .mobile-contact-li .maps {
+        padding-left: 5px;
+    }
+
+    header .menu-ul .mobile-contact-li .contact a {
+        width: 100%;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        background-color: #ff7657;
+    }
+
+    header .menu-ul .mobile-contact-li .maps a {
+        width: 100%;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        background-color: #212e48;
+        border-radius: 10px;
+    }
+
+    header .menu-ul .mobile-contact-li .maps a .icon-marker {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    header .menu .menu-content .menu-ul .company-mobil {
+        display: block !important;
+    }
+
+    header .company-mobil .mobile-logo {
+        width: 20%;
+        height: auto;
+    }
+
+    header .menu-item {
+        border-bottom: 1px solid;
+        border-color: var(--color-border);
+    }
+
+    header .menu-item a {
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff;
+    }
+
+    header .icon-right2 {
+        font-size: 10px;
+        margin-right: 7px;
+        float: left;
+        line-height: 50px;
+        color: #fff;
+        display: block;
+    }
+}

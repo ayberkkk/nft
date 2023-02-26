@@ -1,0 +1,116 @@
+footer {
+    background: var(--background-color-1);
+}
+footer .container {
+    padding: 100px;
+}
+
+footer .logo {
+    width: 20%;
+    height: auto;
+}
+
+footer .information {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0 30px 0 0;
+    color: var(--color-body);
+}
+
+footer .widget-bottom {
+    border-top: 1px solid var(--background-color-2);
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+footer .widget-bottom p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer .form-control {
+    background: var(--background-color-2);
+    border: none;
+    border-radius: 10px;
+}
+
+footer .form-control::placeholder {
+    color: var(--color-body);
+}
+
+footer .input-group-text {
+    background: var(--color-primary-alta);
+    color: var(--color-white);
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer .spam {
+    font-size: 12px;
+    color: var(--color-body);
+}
+
+footer .list-head {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+footer .items {
+    margin: 11px 0;
+    font-size: 16px;
+    color: var(--color-body);
+    font-weight: 400;
+    transition: var(--transition);
+    position: relative;
+}
+
+footer .top-seller-user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer .seller-content {
+    margin-left: 10px;
+}
+footer .img-border {
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+}
+
+footer .top-seller-user img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+footer .seller-name {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .seller-count {
+    display: block;
+    font-size: 14px;
+    color: var(--color-body);
+}
+
+footer .seller-items {
+    border-bottom: 1px solid var(--color-border);
+}
+@media screen and (max-width:992px){
+ 
+    footer .container {
+        padding: 10px;
+    }
+}
