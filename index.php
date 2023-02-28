@@ -7,7 +7,6 @@
    <title>
       NFT's |
    </title>
-   <script src="https://kit.fontawesome.com/7cf8c09f87.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -26,10 +25,28 @@
 
 <? include 'assets/assets.php'; ?>
 <? include 'modules/layouts/header.php'; ?>
+<style>
+   body .content {
+      display: block;
+      position: relative;
+      z-index: 5;
+      overflow-x: hidden;
+      overflow-y: hidden;
+   }
+
+   #closeToggle {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+   }
+</style>
 
 <body>
    <main>
-      <content class="block pos-r z5 owh-x block owh-y">
+      <content class="content">
          <? include 'modules/banner.php'; ?>
          <? include 'modules/bidding.php'; ?>
          <? include 'modules/create.php'; ?>
@@ -39,8 +56,8 @@
          <? include 'modules/topCollection.php'; ?>
       </content>
    </main>
+   <div id="closeToggle" style="display: none;"></div>
 </body>
 <? include 'modules/layouts/footer.php'; ?>
-<? include 'modules/layouts/genel.php'; ?>
 
 </html>

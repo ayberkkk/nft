@@ -29,6 +29,7 @@
 <script src="assets/js/lazysizes.min.js"></script>
 <script src="assets/js/simple-lightbox.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://kit.fontawesome.com/7cf8c09f87.js" crossorigin="anonymous"></script>
 <!-- Js End -->
 
 <!-- Style & Scripts End -->

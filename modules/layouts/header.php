@@ -69,7 +69,55 @@
 									<li class="col-auto menu-item dropMenu">
 										<a class="toggle" href="#">
 											<i class="icon icon-right2"></i>Exloper
+											<i class="icon icon-down1 fs12"></i>
 										</a>
+										<ul class="sub">
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+											<li>
+												test
+											</li>
+										</ul>
 									</li>
 									<!--  -->
 									<li class="col-auto menu-item dropMenu">
@@ -160,7 +208,10 @@
 								</a>
 							</li>
 							<li>
-								<div id="toggleDayOrNight"></div>
+							<!-- <li>
+								<input type="checkbox" id="darkmode-toggle" />
+								<label for="darkmode-toggle">
+							</li> -->
 							</li>
 						</ul>
 					</div>

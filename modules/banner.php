@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-8 information-content">
-				<h2 class="headline-title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+				<h2 class="headline-title">
 					Discover Digital Art, Collect and Sell Your Specific NFTs.
 				</h2>
 				<p class="headline-information">
@@ -24,4 +24,3 @@
 	</div>
 </section>
 <!-- ========== Banner End ========== -->
-<script src="./assets/js/components/headline.js"></script>

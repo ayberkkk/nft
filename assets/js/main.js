@@ -39,183 +39,7 @@ jQuery(document).ready(function ($) {
 
   /* === Content Fİxed End === */
   /*----- Window Height + Scroll End -----*/
-  /* ========== Bubble Box Kapatma ========== */
-  $(".closeBox").click(function () {
-    $(".bubbleBox ").hide().removeClass("op10");
-    setTimeout(function () {
-      $(".bubbleBox ").removeClass("center-h");
-    }, 500);
-  });
-  /* ========== Bubble Box Kapatma End ========== */
 
-  /* Bootstrap Menü Hover Open Settings */
-  /* Dropdown */
-  $("ul.nav li.dropdown").hover(
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeIn(300);
-    },
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeOut(300);
-    }
-  );
-  /* Dropdown End */
-  /* Dropup */
-  $("ul.nav li.dropup").hover(
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeIn(300);
-    },
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeOut(300);
-    }
-  );
-  /* Dropup End */
-  /* Bootstrap Menü Hover Open Settings End */
-  /* Default Navbar */
-  var headerrowh = $("header .row").outerHeight(); //
-
-  $("nav#default-nav #nav-toggle").click(function () {
-    //$('nav#default-nav').toggleClass('h100');
-    //$('nav#default-nav .default-navbar').toggleClass('mt0');
-    var mainulh = $("nav#default-nav ul.mainul").outerHeight(); //
-    $("nav#default-nav").css({
-      height: mainulh + "px",
-    });
-    $(".genelmaske").fadeIn();
-  });
-  $(".genelmaske").click(function () {
-    $("nav#default-nav").attr("style", " ");
-    $(this).fadeOut();
-  });
-
-  $(".subcontent").css({
-    top: headerrowh + "px",
-  });
-
-  $(".subcontent-mega").css({
-    top: headerrowh + "px",
-  });
-
-  $(".dropcontent").hover(
-    function () {
-      var subh = $(".subcontent ul", this).outerHeight(); //
-      $(".subcontent", this).css({
-        height: subh + "px",
-      });
-    },
-    function () {
-      $(".subcontent", this).css({
-        height: "0px",
-      });
-    }
-  );
-
-  $(".dropcontent-mega").hover(
-    function () {
-      var submegah = $(".subcontent-mega ul", this).outerHeight(); //
-      $(".subcontent-mega", this).css({
-        height: submegah + "px",
-      });
-      $("body").addClass("owh");
-      $("header").toggleClass("z1 z11");
-      $(".genelmaske").fadeIn();
-    },
-    function () {
-      $(".subcontent-mega", this).css({
-        height: "0px",
-      });
-      $("body").removeClass("owh");
-      $("header").toggleClass("z1 z11");
-      $(".genelmaske").fadeOut("fast");
-    }
-  );
-
-  if (screen.width < 992) {
-    $(".dropcontent").click(function () {
-      var dropcontenth = $(".subcontent ul", this).outerHeight(); //
-      var mainulh = $("nav#default-nav ul.mainul").outerHeight(); //
-
-      $("nav#default-nav").css({
-        height: mainulh + dropcontenth + "px",
-      });
-    });
-
-    $(".dropcontent-mega").click(function () {
-      $(".subcontent-mega", this).toggleClass("owy-s");
-      $(".subcontent-mega", this).css({
-        height: "80vh",
-        "z-index": "50",
-      });
-    });
-  }
-  /* Default Navbar End */
-  /* ========== Yeni Nesil Menü ========== */
-  $(".drop").hover(
-    function () {
-      var subcontenth = $(".sub-content", this).outerHeight(); //
-      var toggleh = $(".toggle", this).outerHeight(); //
-      if (screen.width > 992) {
-        var imgContenth = $(".imgContent").height();
-        $(".pushTop").css({
-          marginBottom: "+" + imgContenth + "px",
-        });
-      }
-      $(".content").addClass("gray");
-      $("#odeme1").addClass("gray");
-      $(".toggle").removeClass("active");
-      $(this).find(".toggle").addClass("active");
-      $(this)
-        .find(".sub")
-        .css({
-          height: subcontenth + "px",
-          top: toggleh + "px",
-        });
-    },
-    function () {
-      $(this).find(".sub").css({
-        height: "0px",
-      });
-      $(".content").removeClass("gray");
-      $("#odeme1").removeClass("gray");
-      $(".toggle").removeClass("active");
-    }
-  );
-  if (screen.width > 992) {
-    var imgContenth = $(".imgContent").height();
-    $(".pushTop").css({
-      marginBottom: "+" + imgContenth + "px",
-    });
-  }
-  /* ========== Yeni Nesil Menü End ========== */
-
-  /* ===== Header Account ===== */
-  $(".account-toggle").click(function () {
-    var accountlineh = $("#accountline .container").outerHeight(); //
-    $(this).addClass("active");
-    $("#accountline")
-      .addClass("pt10 pb10")
-      .css({
-        height: accountlineh + 20 + "px",
-      });
-    $("header .navContent").removeClass("ml0");
-    $("#closeToggle").fadeOut();
-    $("body").addClass("accountOn");
-    $("header .nav").removeClass("ml0");
-    $("#minisepet").removeClass("mr0");
-    //$('header').removeClass('lt0').addClass('lt80');
-  });
-  $(".accountline-close").click(function () {
-    $(".account-toggle").removeClass("active");
-    $("#accountline").removeClass("pt10 pb10").attr("style", " ");
-    $("body").removeClass("accountOn");
-    $(".content").removeClass("gray");
-    $("header").addClass("lt0").removeClass("lt80");
-  });
-
-  $("body").on("click", function () {
-    if (jQuery("body").hasClass("accountOn")) {
-    }
-  });
-  /* ===== Header Account End ===== */
   /* ===== Mobil Menü Açma ===== */
   $(".menuToggle").click(function () {
     $("header .menu").addClass("ml0");
@@ -317,6 +141,14 @@ var x = setInterval(function () {
   }
 }, 0);
 
+$('.viewAll-toggle').click(function () {
+  $('#viewAllContent').fadeIn().addClass('center-h');
+  $('#viewAllContent .article').load('.content')
+});
+
+
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler ----------*/
-jQuery(window).resize(function () {});
+jQuery(window).resize(function () { });
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler End ----------*/
+
+

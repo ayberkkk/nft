@@ -1,10 +1,9 @@
 #collection {
-    padding: 100px 0 30px 0;
-    padding-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #collection .items-title {
-    padding: 100px;
     padding-bottom: 15px;
     padding-top: 0px;
     color: #fff;
@@ -21,11 +20,6 @@
     color: var(--color-primary);
 }
 
-#collection .collection-cards {
-    padding: 100px;
-    padding-top: 0px;
-}
-
 #collection .card {
     width: 100%;
     height: auto;
@@ -34,6 +28,7 @@
     padding: 15px;
     box-shadow: none;
     transition: 0.4s;
+    overflow: hidden;
 
 }
 
@@ -42,7 +37,14 @@
     height: auto;
     display: table;
     margin: auto;
+
     position: relative;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+#collection .card:hover .main-img {
+    transform: scale(1.2);
 }
 
 #collection .main-img-creater {
@@ -52,6 +54,7 @@
     transform: translate(-50%);
     border: 5px solid var(--color-primary-alta);
     border-radius: 50%;
+    z-index: 3;
 }
 
 #collection .creater {
@@ -61,8 +64,15 @@
     padding: 2px;
 }
 
+#collection .others-img {
+    position: relative;
+    z-index: 1;
+}
+
 #collection .others-img ul {
     display: flex;
+  
+    background-color: transparent;
 }
 
 #collection .others-img img {
@@ -106,6 +116,7 @@
     #collection {
         padding-top: 15px;
     }
+
     #collection .card {
         margin-top: 10px;
     }
@@ -122,13 +133,15 @@
         width: 30px;
         height: 30px;
     }
-    #collection .collection-name  {
+
+    #collection .collection-name {
         font-size: 14px;
     }
 
     #collection .collection-items {
         font-size: 12px;
     }
+
     #collection .collection-cards {
         padding: 10px;
     }

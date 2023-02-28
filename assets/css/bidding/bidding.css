@@ -1,11 +1,9 @@
 #bidding {
-    padding: 100px 0 30px 0;
-    padding-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;;
 }
 
 #bidding .bidding-title {
-    padding: 100px;
-    padding-top: 0px;
     padding-bottom: 15px;
     color: #fff;
     display: flex;
@@ -19,14 +17,15 @@
     height: 20px;
     width: 20px;
     transform: scale(1);
-    animation: pulse-black 2s infinite;
+    animation: pulse-black 3s infinite;
     display: grid;
+    margin-right: 20px;
 
 }
 
 .blob.blue {
     box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
-    animation: pulse-blue 2s infinite;
+    animation: pulse-blue 4s infinite;
 }
 
 
@@ -48,7 +47,6 @@
 }
 
 #bidding .nft-cards {
-    padding: 100px;
     padding-top: 0px;
 }
 
@@ -61,10 +59,33 @@
     box-shadow: none;
 }
 
-#bidding .card:hover {
-    box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
-    -webkit-box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
-    -moz-box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
+#bidding .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    bottom: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(100deg, #13131d, #0398ed);
+    background-repeat: repeat-x;
+    transition: all .5s;
+    z-index: -2;
+    transform: rotate(2deg) translateX(-7px) translateY(11px);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#bidding .card:hover:before {
+    opacity: 1;
+}
+
+#biddng .card:hover ::after {
+    top: 0;
+    background: #242435;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 #bidding .card .card-img img {
@@ -77,6 +98,10 @@
 
 #bidding .card .card-timer {
     position: absolute;
+}
+
+#bidding .card-information {
+    margin: 20px;
 }
 
 #bidding .user img {
@@ -113,9 +138,9 @@
 }
 
 #bidding .more-dot {
-    display: inline-block;
-    padding-left: 60px;
-    position: relative;
+    position: absolute;
+    top: 9px;
+    right: 21px;
     z-index: 1;
     color: var(--color-body);
     background-color: transparent;
@@ -127,19 +152,24 @@
     color: var(--color-primary);
 }
 
-#bidding .more-dot:after {
+#bidding .more-dot::before {
     position: absolute;
     content: "";
     height: 35px;
     width: 35px;
     background: var(--color-primary-alta);
-    top: 96%;
-    left: 93%;
+    top: 71%;
+    left: 63%;
     transform: translate(-50%, -50%);
     z-index: -1;
     border-radius: 50%;
     transition: var(--transition);
     opacity: 0;
+    transition: 0.4s;
+}
+
+#bidding .card:hover .more-dot::before {
+    opacity: 0.8;
 }
 
 #bidding .nft-name {
@@ -179,7 +209,7 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    padding: 2px;
+    padding: 5px;
 }
 
 #bidding .nft-like:hover {
@@ -229,5 +259,8 @@
 
     #bidding .card {
         margin-bottom: 10px;
+    }
+    #bidding .card-information{
+        margin: 5px;
     }
 }

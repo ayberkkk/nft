@@ -1,10 +1,10 @@
 #items {
-    padding: 100px 0 30px 0;
-    padding-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #items .items-title {
-    padding: 100px;
+
     padding-bottom: 15px;
     padding-top: 0px;
     color: #fff;
@@ -16,12 +16,12 @@
     float: right;
     margin-top: 10px;
 }
+
 #items .view-all:hover {
     color: var(--color-primary);
 }
 
 #items .nft-cards {
-    padding: 100px;
     padding-top: 0px;
 }
 
@@ -32,12 +32,36 @@
     background-color: #242435;
     padding: 5px;
     box-shadow: none;
+    transition: 0.4s;
 }
 
-#items .card:hover {
-    box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
-    -webkit-box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
-    -moz-box-shadow: -10px 0px 13px -5px rgba(255, 255, 255, 0.73);
+#items .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    bottom: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(100deg, #13131d, #0398ed);
+    background-repeat: repeat-x;
+    transition: all .5s;
+    z-index: -2;
+    transform: rotate(2deg) translateX(-7px) translateY(11px);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#items .card:hover:before {
+    opacity: 1;
+}
+
+#items .card:hover ::after {
+    top: 0;
+    background: #242435;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 #items .card .card-img img {
@@ -75,6 +99,10 @@
     margin-left: 25px;
 }
 
+#items .card-information {
+    margin: 20px;
+}
+
 #items .place-bit {
     color: var(--color-body);
     display: inline-block;
@@ -86,33 +114,38 @@
 }
 
 #items .more-dot {
-    display: inline-block;
-    padding-left: 60px;
-    position: relative;
+    position: absolute;
+    top: 9px;
+    right: 21px;
     z-index: 1;
     color: var(--color-body);
     background-color: transparent;
     border: 1px solid transparent;
     transition: 0.3s;
+    font-size: 20px;
 }
 
 #items .more-dot:hover {
     color: var(--color-primary);
 }
 
-#items .more-dot:after {
+#items .more-dot::before {
     position: absolute;
     content: "";
     height: 35px;
     width: 35px;
     background: var(--color-primary-alta);
-    top: 96%;
-    left: 93%;
+    top: 71%;
+    left: 63%;
     transform: translate(-50%, -50%);
     z-index: -1;
     border-radius: 50%;
-    transition: var(--transition);
+    transition: 0.4s;
     opacity: 0;
+}
+
+#items .card:hover .more-dot::before {
+    opacity: 0.8;
 }
 
 #items .nft-name {
@@ -202,5 +235,9 @@
 
     #items .card {
         margin-bottom: 10px;
+    }
+
+    #items .card-information {
+        margin: 5px;
     }
 }

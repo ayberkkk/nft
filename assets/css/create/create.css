@@ -1,18 +1,16 @@
 #create {
-    padding: 100px 0 30px 0;
     padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 #create .create-title {
-    padding: 100px;
-    padding-top: 0px;
+    padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
     display: flex;
 }
 
 #create .description-card {
-    padding: 100px;
     padding-top: 20px;
     position: relative;
 }
@@ -38,6 +36,9 @@
     padding-right: 20px;
     box-shadow: none;
     transition: 0.4s;
+}
+#create .card:hover {
+    margin-top: -20px;
 }
 
 #create .step {
