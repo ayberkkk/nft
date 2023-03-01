@@ -72,6 +72,21 @@
     color: var(--color-primary);
 }
 
+/*Light Mode On*/
+
+.light #create .card {
+    background-color: #fff;
+}
+
+.light #create .description-name h2 {
+    color: #111;
+}
+
+.light #create .create-title {
+    color: #111;
+}
+
+/*Light Mode Off*/
 @media screen and (min-width:1320px) and (max-width:1400px) {
     #create .card-img {
         position: absolute;

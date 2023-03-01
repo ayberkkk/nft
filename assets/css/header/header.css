@@ -134,7 +134,6 @@ header #arama button {
 
 header #arama button .icon-search {
     color: var(--color-border);
-    ;
 }
 
 header .menu-left li {
@@ -227,6 +226,43 @@ header .search-li-mobile {
     display: none;
 }
 
+/*Ligth Mode On*/
+
+.light header {
+    background-color: rgba(232, 232, 232, 0.824);
+    border-bottom: 1px solid rgba(232, 232, 232, 0.824);
+}
+
+.light header.sticky {
+    background: rgba(0, 0, 0, .439);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    top: -20px;
+    transition: 0.4s;
+}
+
+.light header.sticky .menu-item a {
+    color: #fff !important;
+}
+
+.light header .menu-item a {
+    color: #111;
+}
+
+.light header .searchbox input {
+    background-color: var(--background-color-2);
+}
+
+.light header #arama button .icon-search {
+    color: #fff;
+}
+
+.light header .bill {
+    border: 1px solid var(--color-border);
+    background-color: var(--background-color-2);
+}
+
+/*Ligth Mode Off*/
 @media screen and (max-width:992px) {
     header {
         -webkit-box-shadow: 0 0 15px 5px rgb(0 0 0 / 8%);

@@ -53,6 +53,35 @@ ul {
 body {
     background: var(--background-color-2);
     font-family: 'Nunito', sans-serif;
+    transition: background 0.2s linear;
+
+}
+
+body.light {
+    background-color: #f5f8fa;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/noise.gif);
+    z-index: -1;
+    opacity: .05;
+}
+body .light::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/noise.gif);
+    z-index: -1;
+    opacity: .05;
 }
 
 .over-top-i {
@@ -87,8 +116,6 @@ body {
 .navbar-default .navbar-nav>.active>a:hover {
     background: none;
 }
-
-
 
 header .dropMenu .sub {
     min-width: 230px;
@@ -284,6 +311,11 @@ ul {
     -o-transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -300,6 +332,7 @@ ul {
     padding: 5px;
     position: relative;
     transform: scale(1.5);
+    margin-top: 5px;
 }
 
 .ball {
@@ -316,4 +349,12 @@ ul {
 /*  target the elemenent after the label*/
 .checkbox:checked+.label .ball {
     transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #ffff;
+}
+
+.fa-sun {
+    color: #ff8f3c;
 }

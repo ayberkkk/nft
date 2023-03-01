@@ -1,6 +1,6 @@
 #top-seller {
     padding-top: 20px;
-       padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 #top-seller .top-seller-title {
@@ -71,14 +71,27 @@
     transform: scale(0.8);
 }
 
+/*Light Mode On */
+
+.light #top-seller .top-seller-title {
+    color: #13131d;
+}
+
+.light #top-seller .seller-name {
+    color: #13131d;
+}
+
+/*Ligth Mode Off*/
+
 @media screen and (max-width:992px) {
     #top-seller {
         padding-top: 15px;
     }
 
     #top-seller .top-seller-title {
-        padding:10px;
+        padding: 10px;
     }
+
     #top-seller .top-seller-content {
         padding: 10px;
     }

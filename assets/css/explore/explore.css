@@ -58,7 +58,8 @@
     border-radius: 10px;
     z-index: -1;
 }
-#explore-products .card-information{
+
+#explore-products .card-information {
     margin: 20px;
 }
 
@@ -197,6 +198,37 @@
     margin-top: 20px;
 }
 
+/*light Mode On*/
+.light #explore-products .items-title {
+    color: #13131d;
+}
+
+.light #explore-products .card {
+    background-color: #fff;
+}
+
+.light #explore-products .card::before {
+    background-image: linear-gradient(100deg, #fff, #0398ed);
+}
+
+.light #explore-products .nft-name {
+    color: #13131d;
+}
+
+.light #explore-products .nft-name:hover {
+    color: var(--color-primary);
+}
+
+.light #explore-products .more-dot {
+    color: #13131d !important;
+}
+
+.light #explore-products .more-dot::before {
+    background-color: #fff;
+}
+
+/*Light Mode Off*/
+
 @media screen and (min-width:1320px) and (max-width:1500px) {
     #explore-products .card-information {
         margin-top: 10px;
@@ -233,7 +265,8 @@
     #explore-products .card {
         margin-bottom: 10px;
     }
-    #explore-products .card-information{
+
+    #explore-products .card-information {
         margin: 5px;
     }
 }

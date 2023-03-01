@@ -1,6 +1,6 @@
 #bidding {
     padding-top: 20px;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
 }
 
 #bidding .bidding-title {
@@ -17,7 +17,7 @@
     height: 20px;
     width: 20px;
     transform: scale(1);
-    animation: pulse-black 3s infinite;
+    animation: pulse-black 5s infinite;
     display: grid;
     margin-right: 20px;
 
@@ -25,7 +25,7 @@
 
 .blob.blue {
     box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
-    animation: pulse-blue 4s infinite;
+    animation: pulse-blue 1s infinite;
 }
 
 
@@ -224,6 +224,36 @@
     margin-right: 5px;
 }
 
+/*Light Mode On*/
+.light #bidding .bidding-title {
+    color: #13131d;
+}
+
+.light #bidding .card {
+    background-color: #fff;
+}
+
+.light #bidding .card::before {
+    background-image: linear-gradient(100deg, #fff, #0398ed);
+}
+
+.light #bidding .nft-name {
+    color: #13131d;
+}
+
+.light #bidding .nft-name:hover {
+    color: var(--color-primary);
+}
+
+.light #bidding .more-dot {
+    color: #13131d !important;
+}
+
+.light #bidding .more-dot::before {
+    background-color: #fff;
+}
+
+/*Light Mode Off*/
 @media screen and (min-width:1320px) and (max-width:1500px) {
     #bidding .card-information {
         margin-top: 10px;
@@ -260,7 +290,8 @@
     #bidding .card {
         margin-bottom: 10px;
     }
-    #bidding .card-information{
+
+    #bidding .card-information {
         margin: 5px;
     }
 }

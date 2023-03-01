@@ -146,7 +146,6 @@ $('.viewAll-toggle').click(function () {
   $('#viewAllContent .article').load('.content')
 });
 
-
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler ----------*/
 jQuery(window).resize(function () { });
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler End ----------*/

@@ -4,7 +4,6 @@
 }
 
 #items .items-title {
-
     padding-bottom: 15px;
     padding-top: 0px;
     color: #fff;
@@ -200,6 +199,36 @@
     margin-right: 5px;
 }
 
+/*Light Mode On*/
+.light #items .items-title {
+    color: #13131d;
+}
+
+.light #items .card {
+    background-color: #fff;
+}
+
+.light #items .card::before {
+    background-image: linear-gradient(100deg, #fff, #0398ed);
+}
+
+.light #items .nft-name {
+    color: #13131d;
+}
+
+.light #items .nft-name:hover {
+    color: var(--color-primary);
+}
+
+.light #items .more-dot {
+    color: #13131d !important;
+}
+
+.light #items .more-dot::before {
+    background-color: #fff;
+}
+
+/*Ligth Mode Off*/
 @media screen and (min-width:1320px) and (max-width:1500px) {
     #items .card-information {
         margin-top: 10px;

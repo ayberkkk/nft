@@ -41,7 +41,6 @@
 														</a>
 													</li>
 												</ul>
-
 											</div>
 										</div>
 									</li>
@@ -208,10 +207,16 @@
 								</a>
 							</li>
 							<li>
-							<!-- <li>
-								<input type="checkbox" id="darkmode-toggle" />
-								<label for="darkmode-toggle">
-							</li> -->
+							<li>
+								<div>
+									<input type="checkbox" class="checkbox" id="checkbox">
+									<label for="checkbox" class="label">
+										<i class="fas fa-moon"></i>
+										<i class='fas fa-sun'></i>
+										<div class='ball'>
+									</label>
+								</div>
+							</li>
 							</li>
 						</ul>
 					</div>
@@ -221,4 +226,11 @@
 	</div>
 	<!-- Bottom End -->
 </header>
+<script>
+	const checkbox = document.getElementById('checkbox');
+
+	checkbox.addEventListener('change', () => {
+		document.body.classList.toggle('light');
+	});
+</script>
 <!-- ========== Header End ========== -->

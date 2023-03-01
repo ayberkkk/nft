@@ -71,7 +71,7 @@
 
 #collection .others-img ul {
     display: flex;
-  
+
     background-color: transparent;
 }
 
@@ -111,6 +111,18 @@
 #collection .collection-items:hover {
     background-color: var(--color-primary);
 }
+
+/*Ligth Mode On*/
+.light #collection .items-title {
+    color: #13131d;
+}
+
+.light #collection .card {
+    background: #fff;
+
+}
+
+/*Ligth Mode Off*/
 
 @media screen and (max-width:992px) {
     #collection {

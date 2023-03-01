@@ -1,6 +1,7 @@
 footer {
     background: var(--background-color-1);
 }
+
 footer .container {
     padding: 20px;
 }
@@ -74,9 +75,11 @@ footer .top-seller-user {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 footer .seller-content {
     margin-left: 10px;
 }
+
 footer .img-border {
     border: 1px solid var(--color-border);
     border-radius: 50%;
@@ -108,8 +111,29 @@ footer .seller-count {
 footer .seller-items {
     border-bottom: 1px solid var(--color-border);
 }
-@media screen and (max-width:992px){
- 
+
+/*Ligth Mode On*/
+
+.light footer {
+    background: #fff;
+}
+
+.light footer .list-head {
+    color: var(--color-body);
+}
+
+.light footer .widget-bottom p {
+    color: var(--color-body);
+}
+
+.light footer .seller-name {
+    color: var(--color-body);
+}
+
+/*Light Mode Off*/
+
+@media screen and (max-width:992px) {
+
     footer .container {
         padding: 10px;
     }

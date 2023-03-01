@@ -1,11 +1,12 @@
 #headline {
-    padding-top:50px;
+    padding-top: 50px;
     padding-bottom: 20px;
-    color: #fff;
 }
+
 #headline .headline-title {
     font-size: 65px;
     font-weight: 400;
+    color: #fff;
 }
 
 #headline .headline-information {
@@ -36,24 +37,36 @@
     margin-left: 20px;
 }
 
-@media screen and (max-width:992px){
+/*Ligth Mode On*/
+.light #headline .headline-title {
+    color: #111111b2;
+    opacity: 1;
+}
+
+/*Ligth Mode Off*/
+
+@media screen and (max-width:992px) {
     #headline {
         padding-top: 15px;
     }
+
     #headline .information-content {
         padding: 10px;
     }
+
     #headline .headline-title {
         font-size: 22px;
     }
-    
+
     #headline .headline-information {
         font-size: 14px;
     }
+
     #headline .headline-img {
         display: flex;
         align-items: center;
     }
+
     #headline .get-started {
         font-size: 14px;
         padding: 5px;
@@ -61,6 +74,7 @@
         padding-right: 10px;
         line-height: 20px;
     }
+
     #headline .create {
         font-size: 14px;
         padding: 5px;
