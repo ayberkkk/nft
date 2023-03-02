@@ -54,85 +54,64 @@
 											</form>
 										</div>
 									</li>
-									<li class="col-auto menu-item dropMenu">
+									<li class="col-auto menu-item">
 										<a class="toggle" href="#">
-											<i class="icon icon-right2"></i>Home
+											Home
 										</a>
 									</li>
 									<li class="col-auto menu-item">
 										<a class="toggle" href="#">
-											<i class="icon icon-right2"></i>About
+											About
 										</a>
 									</li>
 									<!--  -->
-									<li class="col-auto menu-item dropMenu">
+									<li class="col-auto menu-item drop">
 										<a class="toggle" href="#">
-											<i class="icon icon-right2"></i>Exloper
-											<i class="icon icon-down1 fs12"></i>
+											Explore
+											<i class="icon icon-down1"></i>
 										</a>
-										<ul class="sub">
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-											<li>
-												test
-											</li>
-										</ul>
+										<div class="sub">
+											<div class="sub-content">
+												<ul class="sub-ul">
+													<li class="sub-item">
+														<a>
+															Explore#1
+														</a>
+													</li>
+													<li class="sub-item">
+														<a>
+															Explore#3
+														</a>
+													</li>
+													<li class="sub-item">
+														<a>
+															Explore#3v2
+														</a>
+													</li>
+													<li class="sub-item">
+														<a>
+															Explore#3v3
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</li>
 									<!--  -->
-									<li class="col-auto menu-item dropMenu">
+									<li class="col-auto menu-item">
 										<a class="toggle" href="#">
-											<i class="icon icon-right2"></i>Pages
+											Pages
 										</a>
 									</li>
 									<!--  -->
 									<li class="col-auto menu-item">
 										<a class="toggle" href="#blogs">
-											<i class="icon icon-right2"></i>Blog
+											Blog
 										</a>
 									</li>
 									<li class="col-auto menu-item">
 										<a class="toggle" href="#">
-											<i class="icon icon-right2"></i>Contanct
+											Contanct
 										</a>
 									</li>
 									<!--  -->

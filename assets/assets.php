@@ -14,20 +14,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 <!-- Fonts End -->
 <!-- Css -->
-<link rel="stylesheet" type="text/css" href="assets/css/default-bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/font.css">
-<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/simple-lightbox.css">
-<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <!-- Css End -->
 <!-- Js -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/lazysizes.min.js"></script>
-<script src="assets/js/simple-lightbox.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://kit.fontawesome.com/7cf8c09f87.js" crossorigin="anonymous"></script>
 <!-- Js End -->

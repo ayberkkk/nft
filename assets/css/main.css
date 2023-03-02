@@ -35,6 +35,35 @@
     --color-vimeo: #00adef;
     --color-twitch: #6441a3;
     --color-discord: #7289da;
+    --p-light: 300;
+    --p-regular: 400;
+    --p-medium: 500;
+    --p-semi-bold: 600;
+    --p-bold: 700;
+    --p-extra-bold: 800;
+    --p-black: 900;
+    --s-light: 300;
+    --s-regular: 400;
+    --s-medium: 500;
+    --s-semi-bold: 600;
+    --s-bold: 700;
+    --s-extra-bold: 800;
+    --s-black: 900;
+    --transition: 0.4s;
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --font-size-b1: 14px;
+    --font-size-b2: 18px;
+    --font-size-b3: 22px;
+    --line-height-b1: 1.5;
+    --line-height-b2: 1.6;
+    --line-height-b3: 1.7;
+    --h1: 50px;
+    --h2: 36px;
+    --h3: 32px;
+    --h4: 26px;
+    --h5: 22px;
+    --h6: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
@@ -72,6 +101,7 @@ body::before {
     z-index: -1;
     opacity: .05;
 }
+
 body .light::before {
     content: "";
     width: 100%;
@@ -83,6 +113,24 @@ body .light::before {
     z-index: -1;
     opacity: .05;
 }
+
+.drop {
+    position: relative;
+}
+
+.drop .sub {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+
 
 .over-top-i {
     position: fixed;
@@ -151,6 +199,14 @@ ul {
 
 .ml0 {
     margin-left: 0px !important
+}
+
+.none {
+    display: none !important;
+}
+
+.block {
+    display: block !important;
 }
 
 .parallax {
@@ -357,4 +413,10 @@ ul {
 
 .fa-sun {
     color: #ff8f3c;
+}
+
+@media screen and (max-width:992px) {
+    .drop .sub {
+        position: relative;
+    }
 }

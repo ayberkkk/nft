@@ -10,16 +10,227 @@
 }
 
 #explore-products .filter {
-    color: var(--color-body);
-    font-size: 18px;
+    background-color: var(--color-primary);
+    color: #fff;
     float: right;
     margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
 }
 
 #explore-products .filter:hover {
-    color: var(--color-primary);
+    background-color: #0397eda4;
 }
 
+#explore-products .icon-filtre {
+    font-size: 14px;
+}
+
+.default-exp-wrapper {
+    transition: 0.4s;
+    position: relative;
+    z-index: 2;
+}
+
+.default-exp-wrapper {
+    border-top: 1px solid var(--color-border);
+}
+
+.default-exp-wrapper .inner {
+    display: flex;
+    padding: 40px 0;
+    justify-content: flex-end;
+    margin: -10px;
+    flex-wrap: wrap;
+}
+
+.default-exp-wrapper .inner .filter-select-option {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.default-exp-wrapper .inner .filter-select-option .filter-leble {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.price__output--wrap .price--output span {
+    color: var(--color-body);
+    font-size: 12px;
+    display: inline-block;
+    letter-spacing: .5px;
+}
+
+.price__output--wrap .price--output .output-label {
+    margin-left: 10px;
+    flex-grow: 1;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100px;
+    letter-spacing: .5px;
+}
+
+.price__output--wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.price__output--wrap .price--output {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.price__output--wrap .price--filter {
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.price__output--wrap .price--filter a.btn {
+    padding: 2px 10px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    line-height: 16px;
+}
+
+.default-exp-wrapper .inner .filter-select-option .nice-select {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.nice-select {
+    margin-right: 0;
+    border: none;
+    background: var(--color-primary-alta);
+    padding-left: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 40px;
+    outline: 0;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    transition: all .2s ease-in-out;
+    white-space: nowrap;
+    width: auto;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+}
+
+.nice-select .current {
+    color: var(--color-white);
+}
+
+.default-exp-wrapper .inner .filter-select-option .nice-select .list {
+    min-width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nice-select .list {
+    background: transparent;
+    min-width: 200px;
+    border-radius: 5px;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scale(.75) translateY(-21px);
+    transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out;
+    z-index: 9;
+}
+
+#explore-products ul {
+    margin: 16px 0;
+}
+
+.nice-select .option {
+    margin: 0;
+    color: var(--color-white);
+    font-weight: 700;
+    transition: var(--transition);
+    line-height: inherit;
+    min-height: 0;
+    font-size: 22px;
+    padding: 8px 20px;
+    cursor: pointer;
+    list-style: none;
+    outline: 0;
+    text-align: left;
+}
+
+.nice-select .option+.option {
+    border-top: 1px solid var(--color-border);
+}
+
+.default-exp-wrapper .inner .filter-select-option .price_filter {
+    margin-top: 16px;
+}
+
+.input-range .slider-track-container {
+    height: 4px;
+    border-radius: 5px;
+}
+
+.input-range .slider-thumb {
+    width: 10px;
+    height: 10px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    margin-top: -3px;
+    transition: left .3s ease-out, width .3s ease-out;
+}
+
+#explore-products ul li {
+    list-style: none !important;
+}
+
+#explore-products .menu-item .toggle {
+    color: var(--color-white) !important;
+}
+
+#explore-products .sub-content {
+    background: var(--color-primary-alta);
+    z-index: 2;
+}
+
+#explore-products .sub-item {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#explore-products .icon-down1 {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#explore-products .nft-cards {
+    position: relative;
+    z-index: 1;
+}
 
 #explore-products .card {
     width: 100%;

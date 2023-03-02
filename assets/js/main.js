@@ -38,6 +38,29 @@ jQuery(document).ready(function ($) {
   });
 
   /* === Content Fİxed End === */
+
+  $('.drop').hover(function () {
+    var subcontenth = $('.sub-content', this).outerHeight(); //
+    var toggleh = $('.toggle', this).outerHeight(); //
+    $('.toggle').removeClass('active');
+    $(this).find('.toggle').addClass('active');
+    if (screen.width > 992) {
+      $(this).find('.sub').css({
+        'height': (subcontenth) + 30 + 'px',
+        'top': toggleh + 'px',
+      });
+    } else {
+      $(this).find('.sub').css({
+        'height': (subcontenth) + 'px',
+        'top': toggleh + 'px',
+      });
+    }
+  }, function () {
+    $(this).find('.sub').css({
+      'height': '0px',
+    });
+    $('.toggle').removeClass('active');
+  });
   /*----- Window Height + Scroll End -----*/
 
   /* ===== Mobil Menü Açma ===== */
@@ -146,6 +169,29 @@ $('.viewAll-toggle').click(function () {
   $('#viewAllContent .article').load('.content')
 });
 
+$(document).ready(function () {
+  $('.filter-btn').click(function () {
+
+    if ($(".default-exp-wrapper").hasClass('none')) {
+
+      $(".default-exp-wrapper").removeClass('none');
+
+      $(".default-exp-wrapper").addClass('block');
+
+      $(".nft-cards").attr('style',"margin-top:50px")
+
+
+    } else {
+
+      $(".default-exp-wrapper").removeClass('block');
+
+      $(".default-exp-wrapper").addClass('none');
+
+      $(".nft-cards").attr('style',"margin-top:0px")
+
+    }
+  });
+});
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler ----------*/
 jQuery(window).resize(function () { });
 /*---------- Sayfa yeniden boyutlandırma durumunda çalışacak scriptler End ----------*/

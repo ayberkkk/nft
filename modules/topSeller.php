@@ -120,7 +120,7 @@
                                     <span class="seller-count">2,350,000</span>
                                 </div>
                                 <div class="counter">
-                                    3
+                                    8
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                     <span class="seller-count">2,350,000</span>
                                 </div>
                                 <div class="counter">
-                                    4
+                                    9
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                                     <span class="seller-count">2,350,000</span>
                                 </div>
                                 <div class="counter">
-                                    5
+                                    10
                                 </div>
                             </div>
                         </div>

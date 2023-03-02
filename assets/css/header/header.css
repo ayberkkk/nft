@@ -226,6 +226,21 @@ header .search-li-mobile {
     display: none;
 }
 
+header .icon-down1 {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+header .sub-content {
+    background-color: var(--background-color-2);
+}
+
+header .sub-content .sub-item a {
+    color: #fff;
+    font-size: 17px;
+    padding: 15px;
+}
+
 /*Ligth Mode On*/
 
 .light header {
