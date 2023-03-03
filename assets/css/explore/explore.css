@@ -227,6 +227,7 @@
     margin-left: 5px;
 }
 
+/*Filter End*/
 #explore-products .nft-cards {
     position: relative;
     z-index: 1;
@@ -274,12 +275,22 @@
     margin: 20px;
 }
 
+#explore-products .card .card-img {
+    overflow: hidden;
+}
+
 #explore-products .card .card-img img {
     display: table;
     margin: auto;
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+#explore-products  .card:hover .card-img img {
+    transform: scale(1.1);
 }
 
 #explore-products .card .card-timer {

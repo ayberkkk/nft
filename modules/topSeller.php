@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/seller/top-seller.css" />
-<section id="top-seller" class="top-seller">
+<section id="top-seller" class="top-seller animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <h2 class="top-seller-title">

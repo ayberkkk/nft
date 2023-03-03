@@ -67,6 +67,21 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+""
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 a {
     text-decoration: none;
@@ -80,10 +95,63 @@ ul {
 
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     background: var(--background-color-2);
     font-family: 'Nunito', sans-serif;
     transition: background 0.2s linear;
+    position: relative;
+}
 
+body .content {
+    display: block;
+    position: relative;
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#closeToggle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f29441;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 body.light {
@@ -163,6 +231,42 @@ body .light::before {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background: none;
+}
+
+.blob {
+    background: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1);
+    animation: pulse-black 5s infinite;
+    display: grid;
+    margin-right: 20px;
+}
+
+.blob.blue {
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+    animation: pulse-blue 1s infinite;
+}
+
+
+@keyframes pulse-blue {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
 }
 
 header .dropMenu .sub {

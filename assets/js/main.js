@@ -112,9 +112,11 @@ jQuery(document).ready(function ($) {
   });
   /* ========== Scroll Fixed Settings End ========== */
 
-  $(window).on("load", function () {
-    $(".preloader").fadeOut("slow");
-  });
+  var overlay = document.getElementById("overlay");
+
+  window.addEventListener('load', function(){
+    overlay.style.display = 'none';
+  })
 
   var btn = $("#topButton");
   $(window).scroll(function () {
@@ -178,7 +180,7 @@ $(document).ready(function () {
 
       $(".default-exp-wrapper").addClass('block');
 
-      $(".nft-cards").attr('style',"margin-top:50px")
+      $(".nft-cards").attr('style', "margin-top:50px")
 
 
     } else {
@@ -187,7 +189,7 @@ $(document).ready(function () {
 
       $(".default-exp-wrapper").addClass('none');
 
-      $(".nft-cards").attr('style',"margin-top:0px")
+      $(".nft-cards").attr('style', "margin-top:0px")
 
     }
   });

@@ -75,22 +75,27 @@
 												<ul class="sub-ul">
 													<li class="sub-item">
 														<a>
+															<i class="icon icon-right"></i>
 															Explore#1
 														</a>
 													</li>
 													<li class="sub-item">
 														<a>
+															<i class="icon icon-right"></i>
 															Explore#3
 														</a>
 													</li>
 													<li class="sub-item">
 														<a>
+															<i class="icon icon-right"></i>
 															Explore#3v2
 														</a>
 													</li>
 													<li class="sub-item">
 														<a>
+															<i class="icon icon-right"></i>
 															Explore#3v3
+															<span class="blob-menu blue"></span>
 														</a>
 													</li>
 												</ul>

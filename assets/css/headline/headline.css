@@ -4,9 +4,10 @@
 }
 
 #headline .headline-title {
-    font-size: 65px;
+    font-size: 75px;
     font-weight: 400;
     color: #fff;
+    word-break: break-word;
 }
 
 #headline .headline-information {

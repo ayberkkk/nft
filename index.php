@@ -8,43 +8,16 @@
       NFT's |
    </title>
 </head>
-
-
-<div id="loading" class="preloader">
-   <div class="frame">
-      <div class="center">
-         <div class="dot-1"></div>
-         <div class="dot-2"></div>
-         <div class="dot-3"></div>
-      </div>
-   </div>
+<? include 'assets/assets.php'; ?>
+<div id="overlay">
+   <div class="spinner"></div>
 </div>
 <!-- Top Button -->
 <i id="topButton" class="icon icon-up4 over-top-i" style="opacity:0;"></i>
 <!-- Top Button End -->
 
-<? include 'assets/assets.php'; ?>
-<? include 'modules/layouts/header.php'; ?>
-<style>
-   body .content {
-      display: block;
-      position: relative;
-      z-index: 5;
-      overflow-x: hidden;
-      overflow-y: hidden;
-   }
-
-   #closeToggle {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 99;
-   }
-</style>
-
-<body>
+<body class="main">
+   <? include 'modules/layouts/header.php'; ?>
    <main>
       <content class="content">
          <? include 'modules/banner.php'; ?>
@@ -56,8 +29,11 @@
          <? include 'modules/topCollection.php'; ?>
       </content>
    </main>
+   <? include 'modules/layouts/footer.php'; ?>
    <div id="closeToggle" style="display: none;"></div>
+   <script>
+      sal();
+   </script>
 </body>
-<? include 'modules/layouts/footer.php'; ?>
 
 </html>

@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/topCollection/top-collection.css">
-<section id="collection" class="collection">
+<section id="collection" class="collection animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <div class="col-12">

@@ -63,12 +63,22 @@
     z-index: -1;
 }
 
+#items .card .card-img {
+    overflow: hidden;
+}
+
 #items .card .card-img img {
     display: table;
     margin: auto;
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+#items .card:hover .card-img img {
+    transform: scale(1.1);
 }
 
 #items .card .card-timer {

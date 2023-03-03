@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/explore/explore.css">
-<section id="explore-products" class="explore-products">
+<section id="explore-products" class="explore-products animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <div class="col-12">

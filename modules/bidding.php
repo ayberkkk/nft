@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/bidding/bidding.css">
-<section id="bidding" class="bidding">
+<section id="bidding" class="bidding animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <div class="col-12">

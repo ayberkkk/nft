@@ -15,13 +15,15 @@
 <!-- Fonts End -->
 <!-- Css -->
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/sal.scss">
 <link rel="stylesheet" type="text/css" href="assets/css/font.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="./node_modules/sal.js/dist/sal.css">
 <!-- Css End -->
 <!-- Js -->
 <script src="assets/js/jquery.min.js"></script>
+<script src="./node_modules/sal.js/dist/sal.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://kit.fontawesome.com/7cf8c09f87.js" crossorigin="anonymous"></script>
 <!-- Js End -->

@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/create/create.css">
-<section id="create" class="create">
+<section id="create" class="create animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <h2 class="create-title">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card">
-                        <div class="card-img">
+                            <div class="card-img">
                                 <img class="imf-fluid" class="card-img-content" src="./assets/img/create/shape-1.png">
                             </div>
                             <div class="step">
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="descripton-information">
                                     <p>
-                                        A great collection of beautiful website templates for your need. Choose the best suitable temp. 
+                                        A great collection of beautiful website templates for your need. Choose the best suitable temp.
                                     </p>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card">
-                        <div class="card-img">
+                            <div class="card-img">
                                 <img class="imf-fluid" class="card-img-content" src="./assets/img/create/shape-5.png">
                             </div>
                             <div class="step">
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card">
-                        <div class="card-img">
+                            <div class="card-img">
                                 <img class="imf-fluid" class="card-img-content" src="./assets/img/create/shape-6.png">
                             </div>
                             <div class="step">

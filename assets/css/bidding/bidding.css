@@ -1,5 +1,5 @@
 #bidding {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -7,43 +7,6 @@
     padding-bottom: 15px;
     color: #fff;
     display: flex;
-}
-
-.blob {
-    background: none;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    margin: 10px;
-    height: 20px;
-    width: 20px;
-    transform: scale(1);
-    animation: pulse-black 5s infinite;
-    display: grid;
-    margin-right: 20px;
-
-}
-
-.blob.blue {
-    box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
-    animation: pulse-blue 1s infinite;
-}
-
-
-@keyframes pulse-blue {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
-    }
-
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
-    }
-
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
-    }
 }
 
 #bidding .nft-cards {
@@ -87,6 +50,9 @@
     border-radius: 10px;
     z-index: -1;
 }
+#bidding .card .card-img {
+    overflow: hidden;
+}
 
 #bidding .card .card-img img {
     display: table;
@@ -94,6 +60,12 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+#bidding .card:hover .card-img img {
+    transform: scale(1.1);
 }
 
 #bidding .card .card-timer {

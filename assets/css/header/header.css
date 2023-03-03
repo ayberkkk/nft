@@ -24,6 +24,7 @@ header .top {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     text-align: center;
+    animation: gradient 15s ease infinite;
 }
 
 header .top p {
@@ -206,9 +207,6 @@ header .bill .badge {
 
 /* .content is default style of div.content */
 
-header .icon-right2 {
-    display: none;
-}
 
 header .menu .menu-content .menu-ul .company-mobil {
     display: none;
@@ -231,6 +229,10 @@ header .icon-down1 {
     margin-left: 5px;
 }
 
+header .sub {
+    min-width: 300px;
+}
+
 header .sub-content {
     background-color: var(--background-color-2);
 }
@@ -239,6 +241,18 @@ header .sub-content .sub-item a {
     color: #fff;
     font-size: 17px;
     padding: 15px;
+    opacity: 0.8;
+}
+
+header .sub-content .sub-item a:hover {
+    color: #fff;
+    opacity: 1 !important;
+}
+
+header .sub-item a .icon-right {
+    font-size: 10px;
+    margin-right: 7px;
+    color: #fff;
 }
 
 /*Ligth Mode On*/
@@ -471,12 +485,4 @@ header .sub-content .sub-item a {
         color: #fff;
     }
 
-    header .icon-right2 {
-        font-size: 10px;
-        margin-right: 7px;
-        float: left;
-        line-height: 50px;
-        color: #fff;
-        display: block;
-    }
 }
