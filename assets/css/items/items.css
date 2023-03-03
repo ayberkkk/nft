@@ -217,6 +217,9 @@
 .light #items .card {
     background-color: #fff;
 }
+.light #items .view-all {
+    color: #13131d;
+}
 
 .light #items .card::before {
     background-image: linear-gradient(100deg, #fff, #0398ed);

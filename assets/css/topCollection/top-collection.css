@@ -112,6 +112,7 @@
 }
 
 /*Ligth Mode On*/
+
 .light #collection .items-title {
     color: #13131d;
 }
@@ -150,7 +151,8 @@
     }
 
     #collection .collection-items {
-        font-size: 12px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     #collection .collection-cards {

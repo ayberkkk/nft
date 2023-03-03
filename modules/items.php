@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/items/items.css">
-<section id="items" class="items animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+<section id="items" class="items animated-element" data-sal-duration="400" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <div class="col-12">

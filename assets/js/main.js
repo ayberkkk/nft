@@ -180,7 +180,7 @@ $(document).ready(function () {
 
       $(".default-exp-wrapper").addClass('block');
 
-      $(".nft-cards").attr('style', "margin-top:50px")
+      $(" #explore-products .nft-cards").attr('style', "margin-top:50px")
 
 
     } else {

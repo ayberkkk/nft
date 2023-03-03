@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/create/create.css">
-<section id="create" class="create animated-element" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+<section id="create" class="create animated-element" data-sal-duration="400" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
     <div class="container">
         <div class="row">
             <h2 class="create-title">

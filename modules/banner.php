@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-8 information-content">
-				<h2 class="headline-title animated-element" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+				<h2 class="headline-title animated-element" data-sal-duration="800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
 					Discover Digital Art, Collect and Sell Your Specific NFTs.
 				</h2>
 				<p class="headline-information animated-element" data-sal-duration="800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">

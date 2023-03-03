@@ -12,21 +12,18 @@
 
 #create .description-card {
     padding-top: 20px;
-    position: relative;
-}
-
-#create .card-img {
-    position: absolute;
-    right: -250px;
-    top: -30px;
 }
 
 #create .card-img img {
-    width: 25%;
+    position: absolute;
+    width: 20%;
     height: auto;
+    top: 0;
+    right: 0;
 }
 
 #create .card {
+    position: relative;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -37,6 +34,7 @@
     box-shadow: none;
     transition: 0.4s;
 }
+
 #create .card:hover {
     margin-top: -20px;
 }
@@ -79,35 +77,18 @@
 }
 
 .light #create .description-name h2 {
-    color: #111;
+    color: #13131d;
 }
 
 .light #create .create-title {
-    color: #111;
+    color: #13131d;
 }
 
 /*Light Mode Off*/
-@media screen and (min-width:1320px) and (max-width:1400px) {
-    #create .card-img {
-        position: absolute;
-        right: -160px !important;
-        top: -18px !important;
-    }
-
+@media screen and (min-width:1320px) and (max-width:1600px) {
     #create .card-img img {
-        width: 30% !important;
-    }
-}
+        width: 22.5%;
 
-@media screen and (min-width:1400px) and (max-width:1920px) {
-    #create .card-img {
-        position: absolute;
-        right: -250px !important;
-        top: -18px !important;
-    }
-
-    #create .card-img img {
-        width: 25% !important;
     }
 }
 
@@ -127,12 +108,17 @@
 
     #create .card-img {
         position: absolute;
-        left: 119px;
-        top: 0px;
     }
 
     #create .card {
         margin-top: 10px;
+    }
 
+    #create .card-img img {
+        position: absolute;
+        width: 31%;
+        height: auto;
+        top: -14px;
+        right: 15px;
     }
 }

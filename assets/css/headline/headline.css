@@ -40,8 +40,12 @@
 
 /*Ligth Mode On*/
 .light #headline .headline-title {
-    color: #111111b2;
+    color: #13131d;
     opacity: 1;
+}
+#headline .headline-information {
+    color: #13131d;
+    opacity: 0.8;
 }
 
 /*Ligth Mode Off*/

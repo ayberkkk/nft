@@ -149,6 +149,7 @@ header .wallet {
     line-height: 28px;
     color: #fff;
     border-radius: 10px;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     -webkit-transition: all 0.2s ease-in;
@@ -483,6 +484,13 @@ header .sub-item a .icon-right {
         padding-left: 15px;
         padding-right: 15px;
         color: #fff;
+    }
+    header .sub-content .sub-item a  {
+        padding: 0px;
+        padding-left: 10px;
+    }
+    header .drop .sub {
+        top: 0px !important;
     }
 
 }
