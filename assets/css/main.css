@@ -213,6 +213,11 @@ body .light::before {
     border-radius: 50%;
 }
 
+.show {
+    display: block !important;
+    opacity: 1 !important
+}
+
 .navbar {
     background-color: transparent !important;
     border: 0px !important;
